@@ -204,10 +204,10 @@ strong{color:var(--orange);font-weight:600}
 .btn-dark{background:var(--dark);color:#fff}
 .btn-dark:hover{background:var(--purple);color:#fff}
 .btn-ghost{
-  background:rgba(255,255,255,.06);color:#fff;
-  border:2px solid rgba(255,255,255,.85);
+  background:#fff;color:var(--dark);
+  border:2px solid #fff;
 }
-.btn-ghost:hover{background:#fff;color:var(--dark);border-color:#fff}
+.btn-ghost:hover{background:var(--orange);color:#fff;border-color:var(--orange)}
 .btn-outline-dark{background:transparent;color:var(--dark);border:2px solid var(--dark)}
 .btn-outline-dark:hover{background:var(--dark);color:#fff}
 .btn-nav{padding:11px 22px;font-size:13px}
@@ -471,9 +471,27 @@ section{padding:96px 0;position:relative}
   margin-top:48px;padding:32px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
 }
 .integrations-label{text-align:center;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--body);margin-bottom:20px}
-.logo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 28px;align-items:center}
-.logo-row span{color:var(--heading);font-weight:600;font-size:14.5px;letter-spacing:-.01em;opacity:.75;transition:opacity .3s ease}
-.logo-row span:hover{opacity:1;color:var(--purple)}
+.logo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:18px 32px;align-items:center}
+.logo-row img{
+  height:36px;width:auto;max-width:140px;object-fit:contain;
+  opacity:.85;transition:all .3s ease;filter:grayscale(10%);
+}
+.logo-row img:hover{opacity:1;transform:translateY(-2px);filter:grayscale(0%)}
+.logo-row .logo-text{
+  color:var(--heading);font-weight:700;font-size:14px;
+  padding:8px 14px;border:1px solid var(--line);border-radius:8px;
+  opacity:.75;transition:all .3s ease;
+}
+.logo-row .logo-text:hover{opacity:1;color:var(--purple);border-color:var(--purple)}
+.math-yearly{
+  margin-top:8px;color:var(--orange);font-size:14px;font-weight:600;
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,162,0,.1);padding:5px 12px;border-radius:6px;
+}
+.dark-section .math-yearly{background:rgba(255,162,0,.15)}
+.feature-card .icon img{width:36px;height:36px;object-fit:contain}
+.dark-section .feature-card .icon{background:rgba(255,255,255,.08)}
+.dark-section .feature-card .icon img{filter:brightness(1.1)}
 
 /* Cross-sell row */
 .crosssell-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
@@ -716,32 +734,32 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/cloud-blogs-icon.png" alt="Cloud Blogs" loading="lazy" /></div>
         <h3>Cloud Blogs</h3>
         <p>Effortlessly generate cloud blogs on 12 cloud providers, expanding your online presence with ease.</p>
       </div>
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/content-buckets-icon.png" alt="Content Buckets" loading="lazy" /></div>
         <h3>Content Buckets</h3>
         <p>Leverage OpenAI content generation or supply your own high-quality content to fuel every campaign.</p>
       </div>
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/high-authority-websites-icon.png" alt="High Authority Websites" loading="lazy" /></div>
         <h3>High Authority Websites</h3>
         <p>Efficiently generate high-quality backlinks on authoritative websites to enhance your online presence.</p>
       </div>
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/self-hosted-wordpress-icon.png" alt="Self-hosted WordPress" loading="lazy" /></div>
         <h3>Self-hosted WordPress</h3>
         <p>Generate posts and automatically build links on your own WordPress properties using AI content.</p>
       </div>
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6l2 3h12v13a2 2 0 0 1-2 2H2V3z"/><path d="M8 13h8M8 17h5"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/strategy-creator-icon.png" alt="Strategy Creator" loading="lazy" /></div>
         <h3>Strategy Creator</h3>
         <p>Build and save repeatable SEO campaign blueprints. Establish yourself as the expert clients pay for.</p>
       </div>
       <div class="feature-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
+        <div class="icon"><img src="https://seoneo.io/wp-content/uploads/2024/09/white-label-reports-icon.png" alt="White Label Reports" loading="lazy" /></div>
         <h3>White Label Reports</h3>
         <p>Produce comprehensive white-label link-building reports for your clients at the click of a button.</p>
       </div>
@@ -774,7 +792,8 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
         <div>
           <div class="math-label">SEO NEO</div>
           <div class="math-price">$149<span>/ month</span></div>
-          <div class="math-sub">Unlimited campaigns across 6 built-in channels</div>
+          <div class="math-yearly">or $1,499 / year · save $289</div>
+          <div class="math-sub" style="margin-top:12px">Unlimited campaigns across 6 built-in channels</div>
         </div>
         <ul class="math-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cloud blogs, HA sites, self-hosted WP</li>
@@ -860,12 +879,12 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
       <div class="step">
         <span class="step-num">2</span>
         <h3>Create campaigns and link groups</h3>
-        <p>Point SEO NEO at your money site and keywords. Configure channels (cloud blogs, high authority websites, self-hosted WP) and thread settings per campaign.</p>
+        <p>In the dashboard, create a campaign and link group, pick the channels you want (cloud blogs, high authority websites, self-hosted WordPress), and adjust thread settings per campaign as documented.</p>
       </div>
       <div class="step">
         <span class="step-num">3</span>
         <h3>Run, index, report</h3>
-        <p>Campaigns run in real Chrome with RDPA active. Colinkri and Omega Indexer ping the links live. Results feed straight into white-label reports.</p>
+        <p>Campaigns run in real Chrome with the RDPA safety algorithm active. Colinkri and Omega Indexer are the recommended indexers. Use White Label Reports to hand off branded reporting to clients.</p>
       </div>
     </div>
   </div>
@@ -914,11 +933,19 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     </div>
 
     <div class="integrations">
-      <div class="integrations-label">Works with the tools you already use</div>
+      <div class="integrations-label">Integrated partners &amp; tools</div>
       <div class="logo-row">
-        <span>OpenAI</span><span>Article Forge</span><span>Spin Rewriter</span><span>Spinnerchief</span>
-        <span>Capmonster</span><span>XEvil</span><span>Anti-Captcha</span>
-        <span>Omega Indexer</span><span>Colinkri</span><span>Speedlinks</span><span>Index Inject</span>
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/openai-logo.png" alt="OpenAI" title="OpenAI" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/article-forge-logo.png" alt="Article Forge" title="Article Forge" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/spinrewriter-logo.png" alt="Spin Rewriter" title="Spin Rewriter" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/spinnerchief-logo.png" alt="Spinnerchief" title="Spinnerchief" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/capmonster-logo.png" alt="Capmonster" title="Capmonster" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/xevil-logo.png" alt="XEvil" title="XEvil" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/anti-captcha-logo.png" alt="Anti-Captcha" title="Anti-Captcha" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/omega-logo.png" alt="Omega Indexer" title="Omega Indexer" loading="lazy" />
+        <img src="https://seoneo.io/wp-content/uploads/2024/09/colinkri-logo.png" alt="Colinkri" title="Colinkri" loading="lazy" />
+        <span class="logo-text">Speedlinks</span>
+        <span class="logo-text">Index Inject</span>
       </div>
     </div>
   </div>
