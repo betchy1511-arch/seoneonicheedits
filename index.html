@@ -575,20 +575,33 @@ section{padding:96px 0;position:relative}
 .cs-card:hover .cs-cta svg{transform:translateX(4px)}
 
 /* Pricing */
-.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px;margin:0 auto}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;margin:0 auto;align-items:center}
 .price-card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:40px 34px;
   position:relative;transition:all .3s ease;
 }
 .price-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
 .price-card.featured{
-  border-color:var(--purple);box-shadow:0 20px 60px rgba(137,99,234,.18);
-  background:linear-gradient(180deg,#faf7ff 0%, #fff 50%);
+  border:2px solid var(--purple);
+  box-shadow:0 28px 70px rgba(137,99,234,.32);
+  background:linear-gradient(180deg,#f3edff 0%, #ffffff 55%);
+  transform:scale(1.06);z-index:2;
+}
+.price-card.featured:hover{transform:scale(1.06) translateY(-3px);box-shadow:0 32px 80px rgba(137,99,234,.38)}
+.price-card.featured .price-name{color:var(--purple)}
+.price-card.featured .price-cta{background:var(--purple);box-shadow:0 10px 24px rgba(137,99,234,.35)}
+.price-card.featured .price-cta:hover{background:var(--orange);box-shadow:0 10px 24px rgba(255,162,0,.35)}
+.price-badge-top{
+  position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(90deg,var(--purple),#a689ff);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  padding:8px 18px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 8px 20px rgba(137,99,234,.4);
 }
 .price-tag{
   position:absolute;top:-14px;right:32px;background:var(--orange);color:#fff;
-  font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  padding:7px 14px;border-radius:4px;
+  font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:8px 16px;border-radius:4px;box-shadow:0 6px 16px rgba(255,162,0,.35);
 }
 .price-name{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--body);margin-bottom:10px}
 .price-amount{font-size:56px;font-weight:700;color:var(--heading);letter-spacing:-.02em;line-height:1}
@@ -1102,6 +1115,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
         <a class="btn btn-primary price-cta" href="https://seoneo.io/affiliate/?_atid=eiL0rFS4phZlnCqFOXBqQo5OszMPs7" rel="noopener" target="_blank">Try for FREE Today</a>
       </div>
       <div class="price-card featured">
+        <span class="price-badge-top">Most Popular</span>
         <span class="price-tag">Save $289</span>
         <div class="price-name">Yearly</div>
         <div class="price-amount">$1,499<span>/ yr</span></div>
