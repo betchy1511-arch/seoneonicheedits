@@ -653,20 +653,29 @@ section{padding:96px 0;position:relative}
 .stack-node h4{font-size:16px;font-weight:600;margin:0 0 8px}
 .stack-node p{font-size:13.5px;line-height:1.55;margin:0}
 
-/* FAQ v2 — 2-col card grid */
+/* FAQ v2 — split layout */
 .faq-section-v2{background:var(--bg-soft)}
-.faq-v2-head{display:flex;flex-direction:column;gap:6px;margin-bottom:44px}
-.faq-v2-head h2{margin:0}
-.faq-v2-head p{margin:0;color:var(--body);font-size:17px;max-width:560px}
-.faq-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.faq-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:10px}
-.faq-card .fq{font-weight:600;color:var(--heading);font-size:15.5px;display:flex;gap:10px;align-items:flex-start;margin:0}
-.fq-badge{display:inline-flex;flex-shrink:0;width:26px;height:26px;border-radius:6px;background:var(--purple);color:#fff;font-size:11px;font-weight:700;align-items:center;justify-content:center;margin-top:1px}
-.faq-card .fa{color:var(--body);font-size:14px;line-height:1.65;margin:0;padding-left:36px}
+.faq-split{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.faq-split-left h2{margin:12px 0 16px}
+.faq-split-left p{color:var(--body);font-size:16px;line-height:1.65;margin:0 0 28px}
+.faq-items{display:flex;flex-direction:column;gap:0}
+.faq-item{border-bottom:1px solid var(--line);padding:20px 0}
+.faq-item:first-child{border-top:1px solid var(--line)}
+.faq-item summary{
+  list-style:none;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-weight:600;color:var(--heading);font-size:15.5px;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item[open] summary{color:var(--purple)}
+.faq-chev{width:24px;height:24px;flex-shrink:0;color:var(--body);transition:transform .3s ease}
+.faq-item[open] .faq-chev{transform:rotate(180deg);color:var(--purple)}
+.faq-item .faq-ans{padding:12px 0 0;color:var(--body);font-size:14.5px;line-height:1.7;margin:0}
+.faq-item[open]{border-left:3px solid var(--purple);padding-left:16px;margin-left:-16px}
 @media (max-width:960px){
   .stack-flow{grid-template-columns:1fr;gap:12px}
   .stack-arrow{transform:rotate(90deg)}
-  .faq-cards{grid-template-columns:1fr}
+  .faq-split{grid-template-columns:1fr;gap:36px}
 }
 
 /* Final CTA */
@@ -793,7 +802,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     <div class="section-head">
       <span class="eyebrow">The missing piece</span>
       <h2 style="margin-top:14px">Niche edits work. Tier-2 makes them work harder.</h2>
-      <p>You're already doing the right things. But without a tier-2 layer supporting your placements, you're leaving ranking power on the table.</p>
+      <p>You're already doing the right things. But without tier-2, you're leaving ranking power on the table.</p>
     </div>
     <div class="problem-grid">
       <div class="problem-card">
@@ -1004,44 +1013,37 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
   <div class="container">
     <div class="section-head">
       <span class="eyebrow orange">Do the math</span>
-      <h2 style="margin-top:14px">Niche edits alone vs niche edits + SEO NEO tier-2</h2>
-      <p>Add tier-2 to 10 niche edit placements. Here's what it costs to do it manually, versus with SEO NEO.</p>
+      <h2 style="margin-top:14px">What does tier-2 actually cost?</h2>
+      <p>You're keeping your niche edits. The question is how you build the tier-2 layer behind them.</p>
     </div>
     <div class="math-grid">
       <div class="math-card bad">
         <div>
-          <div class="math-label">Niche edits alone (no tier-2)</div>
-          <div class="math-price">$2,500</div>
-          <div class="math-sub">10 links at $250 average each</div>
+          <div class="math-label">Manual tier-2 (per campaign)</div>
+          <div class="math-price">$500<span>–$1,500</span></div>
+          <div class="math-sub">10 supporting links at $50–$150 each</div>
         </div>
         <ul class="math-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>No tier-2 layer amplifying your placements</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Rankings plateau when links hit their ceiling</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Manual tier-2 adds $50–$150 per supporting link</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Per-link fees stack up on every campaign</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Slow turnaround, manual outreach required</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Costs repeat every time you add a new placement</li>
         </ul>
       </div>
       <div class="vs">VS</div>
       <div class="math-card good">
         <div>
-          <div class="math-label">Niche edits + SEO NEO tier-2</div>
-          <div class="price-toggle">
-            <div class="pt-tier">
-              <div class="pt-label">Monthly</div>
-              <div class="pt-price">$149<span>/mo</span></div>
-            </div>
-            <div class="pt-tier pt-best">
-              <span class="pt-badge">Save $289</span>
-              <div class="pt-label">Yearly</div>
-              <div class="pt-price">$1,499<span>/yr</span></div>
-              <div class="pt-note">≈ <b>$124.92/mo</b></div>
-            </div>
+          <div class="math-label">SEO NEO tier-2 (flat rate)</div>
+          <div class="math-price">$149<span>/mo</span></div>
+          <div class="math-sub" style="margin-top:6px">Unlimited campaigns, unlimited placements</div>
+          <div class="math-yearly">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+            $1,499/yr — save $289 vs monthly
           </div>
-          <div class="math-sub">Tier-2 across 6 link channels, pointing at every placement</div>
         </div>
         <ul class="math-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automated tier-2 via cloud blogs, HA sites, self-hosted WP</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Unlimited campaigns behind every niche edit you place</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free trial: add it to your stack risk-free</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cloud blogs, HA sites, self-hosted WP — all channels included</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No extra cost when you scale placements</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Try free before you pay anything</li>
         </ul>
       </div>
     </div>
@@ -1212,43 +1214,50 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
 
 <section id="faq" class="faq-section-v2">
   <div class="container">
-    <div class="faq-v2-head">
-      <span class="eyebrow" style="margin-bottom:10px">FAQ</span>
-      <h2>Common questions about adding SEO NEO tier-2</h2>
-      <p>Everything you need to know before adding SEO NEO to your link-building stack.</p>
-    </div>
-    <div class="faq-cards">
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>How does SEO NEO amplify the niche edits I buy?</p>
-        <p class="fa">SEO NEO builds automated tier-2 campaigns that point at your niche edit URLs. Cloud blogs, high-authority websites, and self-hosted WordPress all flow authority through your placements to your money site. Flat $149/month, unlimited campaigns.</p>
+    <div class="faq-split">
+      <div class="faq-split-left">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions about adding SEO NEO tier-2</h2>
+        <p>Everything you need before adding SEO NEO to your link-building stack.</p>
+        <a class="btn btn-primary" href="https://seoneo.io/affiliate/?_atid=eiL0rFS4phZlnCqFOXBqQo5OszMPs7" rel="noopener" target="_blank">
+          Try for FREE Today
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <p style="margin-top:14px;font-size:13px;color:var(--body)">No credit card required. Free trial available.</p>
       </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>Do I need to stop buying niche edits to use SEO NEO?</p>
-        <p class="fa">No. SEO NEO sits behind your niche edits, not instead of them. Keep your placements for branded anchors and editorial links. Most agencies using both see better results than using either alone.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>What is SEO NEO?</p>
-        <p class="fa">Next generation SEO software built from scratch for higher performance, higher success rates, and multiplatform support. It creates high-quality backlinks on authority websites, cloud blogs, and self-hosted WordPress automatically.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>Is SEO NEO safe?</p>
-        <p class="fa">Yes. SEO NEO uses a real Chrome browser with advanced algorithms that leave no footprints. Accounts bind to specific proxies for protection. The Real Duplicate Protection Algorithm (RDPA) ensures unique content and URLs in every article.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>What third-party services do I need?</p>
-        <p class="fa">A captcha-solving service (2captcha), proxies (Oxylabs residential ISP proxies recommended), at least one Gmail account, and OpenAI for content generation. All integrate directly inside the SEO NEO dashboard.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>How do I get my tier-2 links indexed?</p>
-        <p class="fa">Colinkri and Omega Indexer are pre-integrated and recommended. Unindexed links pass no authority, so indexing is treated as a mandatory first-class step in every campaign.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>What are the hardware requirements?</p>
-        <p class="fa">Minimum: 4-core CPU, 8 GB RAM, 10 GB disk (SSD recommended). Optimal: 16 GB RAM. Runs on Windows 10+, Windows Server 2016+, macOS (Intel or M), or a VPS.</p>
-      </div>
-      <div class="faq-card">
-        <p class="fq"><span class="fq-badge">Q</span>What payment plans are available?</p>
-        <p class="fa">Two plans: $149 per month or $1,499 per year (saves $289). Try free before you pay.</p>
+      <div class="faq-items">
+        <details class="faq-item">
+          <summary>How does SEO NEO amplify the niche edits I buy? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">SEO NEO builds automated tier-2 campaigns pointing at your niche edit URLs. Cloud blogs, high-authority websites, and self-hosted WordPress all flow authority through your placements to your money site. Flat $149/month, unlimited campaigns.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to stop buying niche edits to use SEO NEO? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">No. SEO NEO sits behind your niche edits, not instead of them. Keep your placements for branded anchors and editorial links. Most agencies using both see better results than using either alone.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is SEO NEO? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">Next generation SEO software built from scratch for higher performance and multiplatform support. It creates high-quality backlinks on authority websites, cloud blogs, and self-hosted WordPress automatically.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is SEO NEO safe? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">Yes. SEO NEO uses a real Chrome browser with advanced algorithms that leave no footprints on Google. Accounts bind to specific proxies. The Real Duplicate Protection Algorithm (RDPA) ensures unique content and URLs in every article.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What third-party services do I need? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">A captcha-solving service (2captcha), proxies (Oxylabs residential ISP proxies recommended), at least one Gmail account, and OpenAI for content generation. All integrate directly inside the SEO NEO dashboard.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I get my tier-2 links indexed? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">Colinkri and Omega Indexer are pre-integrated and recommended. Unindexed links pass no authority, so indexing is treated as a mandatory first-class step in every campaign.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What are the hardware requirements? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">Minimum: 4-core CPU, 8 GB RAM, 10 GB disk (SSD recommended). Optimal: 16 GB RAM. Runs on Windows 10+, Windows Server 2016+, macOS (Intel or M), or a VPS.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What payment plans are available? <svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+          <p class="faq-ans">Two plans: $149 per month or $1,499 per year (saves $289). Try free before you pay.</p>
+        </details>
       </div>
     </div>
   </div>
