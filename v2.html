@@ -655,9 +655,10 @@ section{padding:96px 0;position:relative}
 
 /* FAQ v2 — split layout */
 .faq-section-v2{background:var(--bg-soft)}
-.faq-split{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
-.faq-split-left h2{margin:12px 0 16px}
-.faq-split-left p{color:var(--body);font-size:16px;line-height:1.65;margin:0 0 28px}
+.faq-split{display:grid;grid-template-columns:360px 1fr;gap:80px;align-items:start}
+.faq-split-left{padding-top:4px}
+.faq-split-left h2{margin:12px 0 16px;font-size:clamp(22px,2.2vw,30px)}
+.faq-split-left p{color:var(--body);font-size:15px;line-height:1.65;margin:0 0 28px}
 .faq-items{display:flex;flex-direction:column;gap:0}
 .faq-item{border-bottom:1px solid var(--line);padding:20px 0}
 .faq-item:first-child{border-top:1px solid var(--line)}
@@ -671,11 +672,12 @@ section{padding:96px 0;position:relative}
 .faq-chev{width:24px;height:24px;flex-shrink:0;color:var(--body);transition:transform .3s ease}
 .faq-item[open] .faq-chev{transform:rotate(180deg);color:var(--purple)}
 .faq-item .faq-ans{padding:12px 0 0;color:var(--body);font-size:14.5px;line-height:1.7;margin:0}
-.faq-item[open]{border-left:3px solid var(--purple);padding-left:16px;margin-left:-16px}
+.faq-item[open]{border-left:3px solid var(--purple);padding-left:14px}
 @media (max-width:960px){
   .stack-flow{grid-template-columns:1fr;gap:12px}
   .stack-arrow{transform:rotate(90deg)}
-  .faq-split{grid-template-columns:1fr;gap:36px}
+  .faq-split{grid-template-columns:1fr;gap:32px}
+  .faq-split-left{padding-top:0}
 }
 
 /* Final CTA */
@@ -1217,8 +1219,8 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     <div class="faq-split">
       <div class="faq-split-left">
         <span class="eyebrow">FAQ</span>
-        <h2>Questions about adding SEO NEO tier-2</h2>
-        <p>Everything you need before adding SEO NEO to your link-building stack.</p>
+        <h2>Got questions about SEO NEO?</h2>
+        <p>Everything you need before adding SEO NEO tier-2 to your link-building stack.</p>
         <a class="btn btn-primary" href="https://seoneo.io/affiliate/?_atid=eiL0rFS4phZlnCqFOXBqQo5OszMPs7" rel="noopener" target="_blank">
           Try for FREE Today
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
