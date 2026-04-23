@@ -89,7 +89,7 @@
         {
           "@type": "Question",
           "name": "How does SEO NEO amplify the niche edits I buy?",
-          "acceptedAnswer": {"@type": "Answer", "text": "SEO NEO builds the tier-2 layer that powers up every niche edit placement you make. It runs automated campaigns via cloud blogs, high-authority websites, and self-hosted WordPress — all pointing at your niche edit URLs. Links rank better when authority flows through them, and SEO NEO delivers that amplification at a flat $149 a month with unlimited campaigns."}
+          "acceptedAnswer": {"@type": "Answer", "text": "SEO NEO builds the tier-2 layer that powers up every niche edit placement you make. It runs automated campaigns via cloud blogs, high-authority websites, and self-hosted WordPress, all pointing at your niche edit URLs. Links rank better when authority flows through them, and SEO NEO delivers that amplification at a flat $149 a month with unlimited campaigns."}
         },
         {
           "@type": "Question",
@@ -246,7 +246,7 @@ strong{color:var(--orange);font-weight:600}
 }
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;position:relative;z-index:1}
 .hero h1{color:#fff;font-weight:600;font-size:clamp(30px,3vw,44px);line-height:1.15;max-width:680px}
-.hero h1 strong{color:var(--orange);font-weight:600;display:block;margin-top:2px}
+.hero h1 strong{color:var(--orange);font-weight:700;display:block;margin-top:6px;font-size:1.08em;letter-spacing:-.01em}
 .hero .lead{color:#d4d9de;margin-bottom:28px;max-width:560px;font-weight:400}
 .trust-line{
   display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:28px;
@@ -644,6 +644,31 @@ section{padding:96px 0;position:relative}
 .faq[open] summary .chev{transform:rotate(180deg);background:var(--purple);color:#fff}
 .faq-body{padding:0 26px 24px;color:var(--body);font-size:15px;line-height:1.7}
 
+/* Stack diagram (v2 exclusive) */
+.stack-flow{display:grid;grid-template-columns:1fr 44px 1fr 44px 1fr;gap:0;align-items:center;max-width:880px;margin:0 auto}
+.stack-node{padding:32px 24px;border-radius:var(--radius-lg);text-align:center}
+.stack-arrow{display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25)}
+.stack-arrow svg{width:28px;height:28px}
+.sn-num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;margin:0 auto 14px;font-weight:700;font-size:18px}
+.stack-node h4{font-size:16px;font-weight:600;margin:0 0 8px}
+.stack-node p{font-size:13.5px;line-height:1.55;margin:0}
+
+/* FAQ v2 — 2-col card grid */
+.faq-section-v2{background:var(--bg-soft)}
+.faq-v2-head{display:flex;flex-direction:column;gap:6px;margin-bottom:44px}
+.faq-v2-head h2{margin:0}
+.faq-v2-head p{margin:0;color:var(--body);font-size:17px;max-width:560px}
+.faq-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.faq-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:10px}
+.faq-card .fq{font-weight:600;color:var(--heading);font-size:15.5px;display:flex;gap:10px;align-items:flex-start;margin:0}
+.fq-badge{display:inline-flex;flex-shrink:0;width:26px;height:26px;border-radius:6px;background:var(--purple);color:#fff;font-size:11px;font-weight:700;align-items:center;justify-content:center;margin-top:1px}
+.faq-card .fa{color:var(--body);font-size:14px;line-height:1.65;margin:0;padding-left:36px}
+@media (max-width:960px){
+  .stack-flow{grid-template-columns:1fr;gap:12px}
+  .stack-arrow{transform:rotate(90deg)}
+  .faq-cards{grid-template-columns:1fr}
+}
+
 /* Final CTA */
 .final-cta{
   background:linear-gradient(135deg, #273239 0%, #1b232a 100%);
@@ -715,8 +740,8 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
   <div class="container hero-grid">
     <div>
       <div class="hero-meta"><span class="pulse"></span> Trusted by 750 agencies in 24 countries</div>
-      <h1>Your Niche Edits Hit Harder <strong>When SEO NEO Powers Them Up</strong></h1>
-      <p class="lead speakable">You're already investing in niche edits and guest posts. SEO NEO builds the tier-2 layer that amplifies every link you place — cloud blogs, high-authority backlinks, and self-hosted WordPress all pointing at your money links. One flat price of $149 a month. Unlimited campaigns.</p>
+      <h1>Your Niche Edits Hit Harder <strong>With SEO NEO Tier-2</strong></h1>
+      <p class="lead speakable">You're already investing in niche edits and guest posts. SEO NEO builds the tier-2 layer that amplifies every link you place: cloud blogs, high-authority backlinks, and self-hosted WordPress all pointing at your money links. One flat price of $149 a month. Unlimited campaigns.</p>
       <div class="btn-row">
         <a class="btn btn-primary btn-lg" href="https://seoneo.io/affiliate/?_atid=eiL0rFS4phZlnCqFOXBqQo5OszMPs7" rel="noopener" target="_blank">
           Try for FREE Today
@@ -767,7 +792,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">The missing piece</span>
-      <h2 style="margin-top:14px">Niche edits work — tier-2 makes them work harder</h2>
+      <h2 style="margin-top:14px">Niche edits work. Tier-2 makes them work harder.</h2>
       <p>You're already doing the right things. But without a tier-2 layer supporting your placements, you're leaving ranking power on the table.</p>
     </div>
     <div class="problem-grid">
@@ -784,9 +809,50 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
       <div class="problem-card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M5 5h9a4 4 0 1 1 0 8H9a4 4 0 0 0 0 8h10"/></svg></div>
         <h3>Scaling tier-2 manually is a full-time job</h3>
-        <p>Running tier-2 campaigns for every niche edit placement takes more time than the placements themselves. Most agencies skip it — and wonder why rankings stall.</p>
+        <p>Running tier-2 campaigns for every niche edit placement takes more time than the placements themselves. Most agencies skip it and wonder why rankings stall.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section style="padding:80px 0;background:linear-gradient(135deg,#1b232a 0%,#273239 100%);overflow:hidden;position:relative">
+  <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(600px 350px at 80% 20%,rgba(137,99,234,.18),transparent 65%),radial-gradient(400px 300px at 10% 80%,rgba(255,162,0,.1),transparent 65%)"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div class="section-head">
+      <span class="eyebrow" style="background:rgba(137,99,234,.2);color:#c4b5fd">The amplification model</span>
+      <h2 style="margin-top:14px;color:#fff">How the tier-2 stack works</h2>
+      <p style="color:#a8b2bb">Three layers. One SEO NEO subscription. Every placement hits harder.</p>
+    </div>
+    <div class="stack-flow">
+      <div class="stack-node" style="background:rgba(255,162,0,.12);border:2px solid rgba(255,162,0,.4);box-shadow:0 20px 50px rgba(255,162,0,.15)">
+        <div class="sn-num" style="background:rgba(255,162,0,.2);color:var(--orange)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <h4 style="color:var(--orange)">SEO NEO Tier-2</h4>
+        <p style="color:#d4d9de">Cloud blogs, HA sites, self-hosted WP — automated campaigns pointing at your niche edit placements.</p>
+      </div>
+      <div class="stack-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+      <div class="stack-node" style="background:rgba(137,99,234,.15);border:1px solid rgba(137,99,234,.35)">
+        <div class="sn-num" style="background:rgba(137,99,234,.25);color:#c4b5fd">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l4-4a5 5 0 1 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-4 4a5 5 0 1 0 7 7l1-1"/></svg>
+        </div>
+        <h4 style="color:#fff">Your Niche Edits</h4>
+        <p style="color:#a8b2bb">Contextual placements you already buy. Each one now powered by a tier-2 layer behind it.</p>
+      </div>
+      <div class="stack-arrow" style="color:rgba(255,255,255,.4)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+      <div class="stack-node" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.3)">
+        <div class="sn-num" style="background:rgba(16,185,129,.2);color:var(--success)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h4 style="color:#fff">Your Money Site</h4>
+        <p style="color:#a8b2bb">Receives amplified authority from every niche edit you place. Rankings move further, faster.</p>
+      </div>
+    </div>
+    <p style="text-align:center;color:#5d6b78;font-size:13px;margin-top:28px;letter-spacing:.04em;text-transform:uppercase;font-weight:600">SEO NEO automates the tier-2 layer at $149/month, unlimited campaigns</p>
   </div>
 </section>
 
@@ -795,7 +861,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     <div class="section-head">
       <span class="eyebrow">Why agencies add SEO NEO</span>
       <h2 style="margin-top:14px">Give every niche edit more firepower.</h2>
-      <p>Four ways SEO NEO amplifies your existing link strategy — built-in safety included.</p>
+      <p>Four ways SEO NEO amplifies your existing link strategy, built-in safety included.</p>
     </div>
     <div class="benefits-grid">
       <div class="benefit">
@@ -806,7 +872,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
       <div class="benefit">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg></div>
         <h3>Six channels powering your placements</h3>
-        <p>Cloud blogs, high authority sites, self-hosted WordPress, content buckets, strategy creator, white label reports — all pointing at your money links from one dashboard.</p>
+        <p>Cloud blogs, high authority sites, self-hosted WordPress, content buckets, strategy creator, white label reports: all pointing at your money links from one dashboard.</p>
       </div>
       <div class="benefit">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></div>
@@ -939,7 +1005,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     <div class="section-head">
       <span class="eyebrow orange">Do the math</span>
       <h2 style="margin-top:14px">Niche edits alone vs niche edits + SEO NEO tier-2</h2>
-      <p>Add tier-2 to 10 niche edit placements. Here's what it costs to do it manually — versus with SEO NEO.</p>
+      <p>Add tier-2 to 10 niche edit placements. Here's what it costs to do it manually, versus with SEO NEO.</p>
     </div>
     <div class="math-grid">
       <div class="math-card bad">
@@ -975,7 +1041,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
         <ul class="math-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automated tier-2 via cloud blogs, HA sites, self-hosted WP</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Unlimited campaigns behind every niche edit you place</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free trial — add it to your stack risk-free</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free trial: add it to your stack risk-free</li>
         </ul>
       </div>
     </div>
@@ -1072,7 +1138,7 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
     <div class="section-head">
       <span class="eyebrow">SEO NEO also powers up</span>
       <h2 style="margin-top:14px">Tier-2 for every link type in your stack</h2>
-      <p>Niche edits are just one of the placements SEO NEO amplifies. Same flat price, same dashboard — point it at guest posts, PBNs, citations, and more.</p>
+      <p>Niche edits are just one of the placements SEO NEO amplifies. Same flat price, same dashboard. Point it at guest posts, PBNs, citations, and more.</p>
     </div>
     <div class="crosssell-grid">
       <a href="https://betchy1511-arch.github.io/seoneoguestposts/" class="cs-card">
@@ -1144,49 +1210,46 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
   </div>
 </section>
 
-<section id="faq">
+<section id="faq" class="faq-section-v2">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">FAQ</span>
-      <h2 style="margin-top:14px">Common questions about adding SEO NEO tier-2</h2>
+    <div class="faq-v2-head">
+      <span class="eyebrow" style="margin-bottom:10px">FAQ</span>
+      <h2>Common questions about adding SEO NEO tier-2</h2>
+      <p>Everything you need to know before adding SEO NEO to your link-building stack.</p>
     </div>
-    <div class="faq-wrap">
-      <details class="faq">
-        <summary>How does SEO NEO amplify the niche edits I buy? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">SEO NEO builds the tier-2 layer that powers up every niche edit placement you make. It runs automated campaigns via cloud blogs, high-authority websites, and self-hosted WordPress — all pointing at your niche edit URLs. Links rank better when authority flows through them, and SEO NEO delivers that amplification at a flat $149 a month with unlimited campaigns.</div>
-      </details>
-      <details class="faq">
-        <summary>What is SEO NEO? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">From the official docs: SEO NEO is next generation SEO software that uses cutting-edge technology to create high-quality backlinks on authority websites. It was built from scratch for higher performance, higher success rates, and multiplatform support.</div>
-      </details>
-      <details class="faq">
-        <summary>Who uses SEO NEO? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">SEO agencies, SEO freelancers, affiliate marketers, small or big companies, and anyone who wants their website on the first page of Google.</div>
-      </details>
-      <details class="faq">
-        <summary>Is SEO NEO safe? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">Yes. SEO NEO uses a real Chrome browser with advanced algorithms that leave no footprints on Google. Accounts are bound to specific proxies for protection. The Real Duplicate Protection Algorithm (RDPA) ensures unique keywords and URLs in each article, so posts are not treated as spam.</div>
-      </details>
-      <details class="faq">
-        <summary>What are the hardware requirements? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">Minimum: 4 cores CPU, 8GB RAM, 10GB free disk, SSD recommended. For optimal performance the docs recommend 16GB RAM. SEO NEO runs on Windows 10+, Windows Server 2016+, macOS (Intel or M), or a VPS.</div>
-      </details>
-      <details class="faq">
-        <summary>What third-party services do I need? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">Recommended: a captcha-solving service (2captcha), proxies (Oxylabs residential ISP proxies are recommended in the docs), at least one Gmail account, and OpenAI for content generation. All are integrated directly inside the SEO NEO dashboard.</div>
-      </details>
-      <details class="faq">
-        <summary>How do I get my backlinks indexed? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">SEO NEO recommends Colinkri and Omega Indexer for backlink indexing, both pre-integrated. Unindexed links get ignored by search engines, so indexing is treated as a first-class step in every campaign.</div>
-      </details>
-      <details class="faq">
-        <summary>Do I need to stop buying niche edits to use SEO NEO? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">No. SEO NEO is designed to work alongside the niche edits you already buy. Keep your placements for branded anchors and editorial links. Point SEO NEO tier-2 campaigns at those placements to amplify their authority. Most agencies using both see better results than using either alone.</div>
-      </details>
-      <details class="faq">
-        <summary>What payment plans are available? <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
-        <div class="faq-body">Two packages: $149 per month or $1,499 per year. Try free before you pay.</div>
-      </details>
+    <div class="faq-cards">
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>How does SEO NEO amplify the niche edits I buy?</p>
+        <p class="fa">SEO NEO builds automated tier-2 campaigns that point at your niche edit URLs. Cloud blogs, high-authority websites, and self-hosted WordPress all flow authority through your placements to your money site. Flat $149/month, unlimited campaigns.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>Do I need to stop buying niche edits to use SEO NEO?</p>
+        <p class="fa">No. SEO NEO sits behind your niche edits, not instead of them. Keep your placements for branded anchors and editorial links. Most agencies using both see better results than using either alone.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>What is SEO NEO?</p>
+        <p class="fa">Next generation SEO software built from scratch for higher performance, higher success rates, and multiplatform support. It creates high-quality backlinks on authority websites, cloud blogs, and self-hosted WordPress automatically.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>Is SEO NEO safe?</p>
+        <p class="fa">Yes. SEO NEO uses a real Chrome browser with advanced algorithms that leave no footprints. Accounts bind to specific proxies for protection. The Real Duplicate Protection Algorithm (RDPA) ensures unique content and URLs in every article.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>What third-party services do I need?</p>
+        <p class="fa">A captcha-solving service (2captcha), proxies (Oxylabs residential ISP proxies recommended), at least one Gmail account, and OpenAI for content generation. All integrate directly inside the SEO NEO dashboard.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>How do I get my tier-2 links indexed?</p>
+        <p class="fa">Colinkri and Omega Indexer are pre-integrated and recommended. Unindexed links pass no authority, so indexing is treated as a mandatory first-class step in every campaign.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>What are the hardware requirements?</p>
+        <p class="fa">Minimum: 4-core CPU, 8 GB RAM, 10 GB disk (SSD recommended). Optimal: 16 GB RAM. Runs on Windows 10+, Windows Server 2016+, macOS (Intel or M), or a VPS.</p>
+      </div>
+      <div class="faq-card">
+        <p class="fq"><span class="fq-badge">Q</span>What payment plans are available?</p>
+        <p class="fa">Two plans: $149 per month or $1,499 per year (saves $289). Try free before you pay.</p>
+      </div>
     </div>
   </div>
 </section>
