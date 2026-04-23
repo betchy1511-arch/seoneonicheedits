@@ -536,17 +536,18 @@ section{padding:96px 0;position:relative}
 /* Cross-sell row */
 .crosssell-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 .cs-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 28px 30px;
+  background:linear-gradient(135deg, #273239 0%, #1b232a 100%);
+  border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:36px 28px 30px;
   text-align:left;transition:all .3s ease;
-  display:flex;flex-direction:column;gap:14px;color:var(--heading);min-height:260px;
+  display:flex;flex-direction:column;gap:14px;color:#fff;min-height:260px;
 }
-.cs-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md);border-color:var(--orange);color:var(--heading)}
+.cs-card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.35);border-color:var(--orange);color:#fff}
 .cs-icon{
-  width:52px;height:52px;border-radius:12px;background:rgba(137,99,234,.12);color:var(--purple);
+  width:52px;height:52px;border-radius:12px;background:rgba(137,99,234,.2);color:#c4b5fd;
   display:grid;place-items:center;transition:all .3s ease;
 }
 .cs-icon svg{width:26px;height:26px}
-.cs-card h4{font-size:18px;margin:0;font-weight:600;color:var(--heading)}
+.cs-card h4{font-size:18px;margin:0;font-weight:600;color:#fff}
 .cs-card:hover .cs-icon{background:var(--orange);color:#fff}
 .cs-cta{
   display:inline-flex;align-items:center;gap:8px;margin-top:auto;
@@ -1029,22 +1030,27 @@ footer{background:#1b232a;color:#9fa8b2;padding:44px 0;font-size:13.5px;border-t
       <a href="https://betchy1511-arch.github.io/seoneoguestposts/" class="cs-card">
         <div class="cs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
         <h4>Guest Posts</h4>
+        <span class="cs-cta">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
       </a>
       <a href="https://betchy1511-arch.github.io/seoneopbns/" class="cs-card">
         <div class="cs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
         <h4>PBNs</h4>
+        <span class="cs-cta">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
       </a>
       <a href="https://betchy1511-arch.github.io/seoneocitations/" class="cs-card">
         <div class="cs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <h4>Citations</h4>
+        <span class="cs-cta">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
       </a>
       <a href="https://betchy1511-arch.github.io/seoneopressreleases/" class="cs-card">
         <div class="cs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 13z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
         <h4>Press Releases</h4>
+        <span class="cs-cta">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
       </a>
       <a href="https://betchy1511-arch.github.io/seoneobacklinkbuilding/" class="cs-card">
         <div class="cs-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l4-4a5 5 0 1 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-4 4a5 5 0 1 0 7 7l1-1"/></svg></div>
         <h4>Backlink Building</h4>
+        <span class="cs-cta">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
       </a>
     </div>
   </div>
